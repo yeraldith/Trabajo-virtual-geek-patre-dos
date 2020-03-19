@@ -1,6 +1,5 @@
-const parrafo = document.querySelector('.parrafo');
+const parrafo = document.getElementById('parrafo');
 
-function agregar() {
-    parrafo.innerHTML = parrafo.innerHTML + '<p> Lorem ipsum dolor sit amet consectetur adipisicing elit.Quaerat reiciendis et recusandae deleniti sit nihil eaque ipsa doloremque quia cupiditate nulla fuga maiores tenetur voluptates, dolores saepe ipsum ? Voluptates, perferendis ? < /p>';
-}
-parrafo.addEventListener('mouseover', agregar);
+parrafo.addEventListener('mouseover', () => {
+    parrafo.innerHTML += '<p> Lorem ipsum dolor sit amet consectetur adipisicing elit.Quaerat reiciendis et recusandae deleniti sit nihil eaque ipsa doloremque quia cupiditate nulla fuga maiores tenetur voluptates, dolores saepe ipsum ? Voluptates, perferendis ? </p>'
+});

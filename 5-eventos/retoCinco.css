@@ -1,0 +1,17 @@
+.teacher--selected {
+    color: rgb(19, 17, 17);
+    background: darkgoldenrod;
+    text-align: center;
+    font-size: 23px;
+}
+
+.favorite {
+    background: aqua;
+    color: gray;
+}
+
+.inicio {
+    border: solid 2px black;
+    font-size: 23px;
+    background: rgba(0, 100, 0, 0.459);
+}

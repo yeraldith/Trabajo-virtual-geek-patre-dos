@@ -4,32 +4,21 @@ const eternalSunshineOfTheSM = 'Eternal sunshine of the spotless mind';
 const blueVelvet = 'Blue velvet';
 const split = 'Split';
 const button = document.querySelector('.ver');
+const lista = document.getElementById('listado');
 
+//Agregar listado 
 button.addEventListener('click', function() {
-    const lista = document.getElementById('listado');
-    lista.innerHTML = `<li>${inception}</li> <li>${theButterFlyEffect}</li>
-<li>${eternalSunshineOfTheSM}</li> <li>${blueVelvet}</li>
-<li>${split}</li>`;
-
+    lista.innerHTML = `<li id="li1">${inception}</li> <li id="li2">${theButterFlyEffect}</li>
+<li id="li3">${eternalSunshineOfTheSM}</li> <li id="li4">${blueVelvet}</li>
+<li id="li5">${split}</li>`;
 });
 
-const evento1 = document.getElementById('lis1');
-evento1.addEventListener('click', function() {
-    console.log("Mi pelicula favorita es: " + evento1.innerHTML)
-});
-const evento2 = document.getElementById('lis2');
-evento2.addEventListener('click', function() {
-    console.log("Mi pelicula favorita es: " + evento2.innerHTML)
-});
-const evento3 = document.getElementById('lis3');
-evento3.addEventListener('click', function() {
-    console.log("Mi pelicula favorita es: " + evento3.innerHTML)
-});
-const evento4 = document.getElementById('lis4');
-evento4.addEventListener('click', function() {
-    console.log("Mi pelicula favorita es: " + evento4.innerHTML)
-});
-const evento5 = document.getElementById('lis5');
-evento5.addEventListener('click', function() {
-    console.log("Mi pelicula favorita es: " + evento5.innerHTML)
-});
+//mostrar en consola el listado
+lista.addEventListener('click', () => {
+    console.log("Mi pelicula favorita es: " + inception);
+    console.log("Mi pelicula favorita es: " + theButterFlyEffect);
+    console.log("Mi pelicula favorita es: " + eternalSunshineOfTheSM);
+    console.log("Mi pelicula favorita es: " + blueVelvet);
+    console.log("Mi pelicula favorita es: " + split);
+
+})
